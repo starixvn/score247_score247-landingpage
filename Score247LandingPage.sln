@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Score247LandingPage", "Score247LandingPage\Score247LandingPage.csproj", "{0F90716E-7793-46C4-9B93-8CCF028DE36B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F90716E-7793-46C4-9B93-8CCF028DE36B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F90716E-7793-46C4-9B93-8CCF028DE36B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F90716E-7793-46C4-9B93-8CCF028DE36B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F90716E-7793-46C4-9B93-8CCF028DE36B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB0A98B3-947E-4E2D-983A-F224F4B3807F}
+	EndGlobalSection
+EndGlobal
