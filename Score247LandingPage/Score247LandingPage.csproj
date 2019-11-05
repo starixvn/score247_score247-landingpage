@@ -6,8 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="bundleconfig.json" />
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Remove="LocalizationResources\ExpressLocalizationResource.en.resx" />
     <EmbeddedResource Remove="LocalizationResources\ExpressLocalizationResource.vi.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>

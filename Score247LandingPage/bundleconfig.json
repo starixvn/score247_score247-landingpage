@@ -1,0 +1,20 @@
+[
+  {
+    "outputFileName": "wwwroot/bundles/site.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/dist/jquery.min.js",
+      "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "wwwroot/js/jquery.easing.min.js",
+      "wwwroot/js/site.js",
+      "wwwroot/js/scrolling-nav.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/bundles/site.css",
+    "inputFiles": [
+      "wwwroot/fonts/style.css",
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "wwwroot/scss/site.css"
+    ]
+  }
+]

@@ -3,8 +3,313 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<section class="header-area">
+    <div class="navbar-area sticky">
+        <div class="page-container nav-container">
+            <a class="logo"><img src="~/images/Logo.png" alt="Logo" /></a>
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-hambuger"></span>
+                </button>
+                <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="page-scroll" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="page-scroll" href="#helpcenter">Help Center</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="page-scroll" href="#ratingreviews">Rating & Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown language">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="flag-eng"></span>
+                            <span class="icon-arrow-down"></span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"><span class="flag-cn"></span>Chinese</a>
+                            <a class="dropdown-item" href="#"><span class="flag-id"></span>Indonesian</a>
+                            <a class="dropdown-item" href="#"><span class="flag-my"></span>Malaysian</a>
+                            <a class="dropdown-item" href="#"><span class="flag-eng"></span>English</a>
+                            <a class="dropdown-item" href="#"><span class="flag-vn"></span>Vietnamese</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="page-container banner-container">
+            <div class="banner-left">
+                <h2 class="banner-title">The most complete <span class="text-orange">football app</span> on the market</h2>
+                <p class="banner-content">
+                    It is easy to follow your preferences. From goals to cards, fixtures to final results, statistics to breaking news, Score247 will keep you posted with the up-to-the-minute information
+                </p>
+                <div class="banner-buttons">
+                    <button class="btn-white">App store</button>
+                    <button class="btn-white-outline">Play store</button>
+                </div>
+            </div>
+            <div class="banner-right">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+                <img src="~/images/banner1.png" alt="Banner" />
+            </div>
+        </div>
+    </div>
+</section>
+<div id="features" class="features">
+    <div class="page-container features-container">
+        <div class="features-image">
+            <img src="~/images/banner1.png" />
+        </div>
+        <div>
+            <div class="block">
+                <div class="block-circle">
+                    <span class="icon-real-time-update"></span>
+                </div>
+                <div>
+                    <h1 class="block-title">Real-time updates</h1>
+                    <p class="block-content">
+                        Follow every moment of every match. Whether a goal is scored, red card issued, set or period is over, you will know at the same time as the live audience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-circle">
+                    <span class="icon-ball-tracker-visualization"></span>
+                </div>
+                <div>
+                    <h1 class="block-title">Ball tracker visualization</h1>
+                    <p class="block-content">
+                        Follow every moment of every match. Whether a goal is scored, red card issued, set or period is over
+                    </p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-circle">
+                    <span class="icon-rich-odds"></span>
+                </div>
+                <div>
+                    <h1 class="block-title">Rich odds comparison & odds movement</h1>
+                    <p class="block-content">
+                        Supply plenty of odds values from different providers, and their movements throughout the offering periods
+                    </p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-circle">
+                    <span class="icon-multiple-language"></span>
+                </div>
+                <div>
+                    <h1 class="block-title">Multiple languages and time zones</h1>
+                    <p class="block-content">
+                        Support the 6 most widely used languages in Asia along with a convenient time zone selector. The data now can be displayed in your favored language, with an appropriate time frame
+                    </p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-circle">
+                    <span class="icon-tv-channel"></span>
+                </div>
+                <div>
+                    <h1 class="block-title">TV channels</h1>
+                    <p class="block-content">
+                        Want to watch the game on TV? Use this to find out the available channels in your country and their broadcast schedules
+                    </p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-circle">
+                    <span class="icon-social"></span>
+                </div>
+                <div>
+                    <h1 class="block-title">Social</h1>
+                    <p class="block-content">
+                        Have something to talk about the last match? Don't keep it to yourself. Try connecting with other users via our community - share your thoughts and listen to theirs
+                    </p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-circle">
+                    <span class="icon-calendar1"></span>
+                </div>
+                <div>
+                    <h1 class="block-title">Calendar</h1>
+                    <p class="block-content">
+                        Easily get hold of the upcoming event schedule, as well as the one that has already taken place
+                    </p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-circle">
+                    <span class="icon-no-ads"></span>
+                </div>
+                <div>
+                    <h1 class="block-title">No ads</h1>
+                    <p class="block-content">
+                        Feel free to enjoy our services without bothering about annoying advertisements
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<div id="helpcenter" class="helpcenter page-container">
+    <div class="">
+        <h1 class="helpcenter-title">how can we help you</h1>
+        <div class="search-box">
+            <input type="text" class="search-text" placeholder="TYPE KEYWORD TO FIND ANSWER" />
+            <span class="icon-search"></span>
+        </div>
+        <ul class="list-qa">
+            <li class="qa">
+                <h2 class="question">
+                    Why should I add a favorite Match
+                    /League?
+                </h2>
+                <p class="anwser">If you have a particular interest in a certa...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">How do I add a favorite League?</h2>
+                <p class="anwser">Navigate to League Details from home p...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">How do I add a favorite Match?</h2>
+                <p class="anwser">In match list, tap the Star icon right next...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">
+                    Where do I find the standings for a
+                    specific league?
+                </h2>
+                <p class="anwser">Fixtures, Results and Standings (if applic...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">
+                    Can the league table show more
+                    information?
+                </h2>
+                <p class="anwser">Additional information is available when...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">I subscribed the notifications for a specific match and the star next to the match is already orange, but I didn't receive any notification. What should I do?</h2>
+                <p class="anwser">Make sure to enable the notifications for...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">The line-ups are not match. Can you fix them?</h2>
+                <p class="anwser">Line-ups change regularly over time and...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">
+                    Why can't I find my favorite league in the
+                    list of matches?
+                </h2>
+                <p class="The favorite League is only visible during..."></p>
+            </li>
+            <li class="qa">
+                <h2 class="question">I have noticed an error in your data. What should I do?</h2>
+                <p class="anwser">If you want to report an error, please do n...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">The start time of the match is not displayed correctly. Why was that?</h2>
+                <p class="anwser">The start time of the match will be based...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">Why are some leagues are not provided in your system?</h2>
+                <p class="anwser">We are working to extend the list of supp...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">How do I turn off Breaking News alerts?</h2>
+                <p class="anwser">Go to [Settings] > [Notifications] to toggle...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">How do I turn off news notifications for a Favorite Match/League?</h2>
+                <p class="anwser">Go to [Settings] > [Info Alert]. Here, you c...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">Why images aren’t loading?</h2>
+                <p class="anwser">Check your network, make sure it is ON...</p>
+            </li>
+            <li class="qa">
+                <h2 class="question">Having a question not listed in FAQ?</h2>
+                <p class="anwser">You can email us by tapping on the foll...</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="ratingreviews" class="ratingreviews">
+    <div class="user-rating">
+        <img class="avatar" src="~/images/user1.png" />
+        <div class="rating">
+            <span class="icon-favorite"></span>
+            <span class="icon-favorite"></span>
+            <span class="icon-favorite"></span>
+            <span class="icon-favorite"></span>
+            <span class="icon-favorite"></span>
+        </div>
+        <p class="commentary">With many functions but simple operation, it can completely replace all other live score apps. Love it! Thanks for your hard work.</p>
+        <div class="name">Gavin</div>
+    </div>
+</div>
+<div id="contact" class="contact">
+    <h1 class="contact-title">Get in touch with us!</h1>
+    <p class="get-in-touch">
+        Whether you’re curious about job openings, have a great idea for a partnership, or just want to drop us a line – Please get in touch with us via the form below. We look forward to hearing from you!
+    </p>
+    <form class="contact-form">
+        <input type="text" class="contact-control" placeholder="Your email address" />
+        <input type="text" class="contact-control" placeholder="Subject" />
+        <textarea class="contact-control message" placeholder="Message"></textarea>
+        <button class="btn-send">send message</button>
+    </form>
+</div>
+<footer>
+    <h1 class="group-title">site map</h1>
+    <ul class="list-items">
+        <li>Features</li>
+        <li>Help Center</li>
+        <li>Rating & Reviews</li>
+        <li>Contact Us</li>
+    </ul>
+    <h1 class="group-title">download</h1>
+    <ul class="list-items">
+        <li>App store</li>
+        <li>google play</li>
+    </ul>
+    <h1 class="group-title">let’s connect</h1>
+    <ul class="list-items">
+        <li>Lot 40, plastic valley, hcmc, vietnam</li>
+        <li>084824681012</li>
+        <li>cs@score247.com</li>
+    </ul>
+    <ul class="list-items social">
+        <li>
+            <div class="circle">
+                <span class="icon-fb"></span>
+            </div>
+        </li>
+        <li>
+            <div class="circle">
+                <span class="icon-instagram"></span>
+            </div>
+        </li>
+        <li>
+            <div class="circle">
+                <span class="icon-twitter"></span>
+            </div>
+        </li>
+    </ul>
+    <p class="copyright">© 2019 Score247, Inc. All right reserved </p>
+</footer>

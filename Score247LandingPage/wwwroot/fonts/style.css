@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Score247LandingPage';
+  src:  url('fonts/Score247LandingPage.eot?3wyfy8');
+  src:  url('fonts/Score247LandingPage.eot?3wyfy8#iefix') format('embedded-opentype'),
+    url('fonts/Score247LandingPage.ttf?3wyfy8') format('truetype'),
+    url('fonts/Score247LandingPage.woff?3wyfy8') format('woff'),
+    url('fonts/Score247LandingPage.svg?3wyfy8#Score247LandingPage') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Score247LandingPage' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e900";
+  color: #909198;
+}
+.icon-ball-tracker-visualization:before {
+  content: "\e926";
+  color: #f90;
+}
+.icon-calendar1:before {
+  content: "\e927";
+  color: #f90;
+}
+.icon-favorite:before {
+  content: "\e928";
+  color: #f90;
+}
+.icon-fb:before {
+  content: "\e929";
+  color: #fff;
+}
+.icon-hambuger:before {
+  content: "\e92a";
+  color: #fff;
+}
+.icon-instagram:before {
+  content: "\e92b";
+  color: #fff;
+}
+.icon-multiple-language:before {
+  content: "\e92c";
+  color: #f90;
+}
+.icon-no-ads:before {
+  content: "\e92d";
+  color: #f90;
+}
+.icon-real-time-update:before {
+  content: "\e92e";
+  color: #f90;
+}
+.icon-rich-odds:before {
+  content: "\e92f";
+  color: #f90;
+}
+.icon-search:before {
+  content: "\e930";
+  color: #ccc;
+}
+.icon-social:before {
+  content: "\e931";
+  color: #f90;
+}
+.icon-tv-channel:before {
+  content: "\e932";
+  color: #f90;
+}
+.icon-twitter:before {
+  content: "\e933";
+  color: #fff;
+}
