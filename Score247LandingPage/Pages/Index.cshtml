@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 <section class="header-area">
-    <div class="navbar-area sticky">
+    <div class="navbar-area">
         <div class="page-container nav-container">
             <a class="logo"><img src="~/images/Logo.png" alt="Logo" /></a>
             <nav class="navbar navbar-expand-lg">
@@ -26,18 +26,19 @@
                             <a class="page-scroll" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <div class="dropdown language">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="flag-eng"></span>
-                            <span class="icon-arrow-down"></span>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#"><span class="flag-cn"></span>Chinese</a>
-                            <a class="dropdown-item" href="#"><span class="flag-id"></span>Indonesian</a>
-                            <a class="dropdown-item" href="#"><span class="flag-my"></span>Malaysian</a>
-                            <a class="dropdown-item" href="#"><span class="flag-eng"></span>English</a>
-                            <a class="dropdown-item" href="#"><span class="flag-vn"></span>Vietnamese</a>
-                        </div>
+                </div>
+                <div class="dropdown language">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="flag-eng"></span>
+                        <span class="icon-arrow-down"></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><span class="flag-cn"></span>中文</a>
+                        <a class="dropdown-item" href="#"><span class="flag-id"></span>Bahasa Indonesia</a>
+                        <a class="dropdown-item" href="#"><span class="flag-my"></span>മലേഷ്യൻ</a>
+                        <a class="dropdown-item" href="#"><span class="flag-vn"></span>Tiếng Việt</a>
+                        <a class="dropdown-item" href="#"><span class="flag-th"></span>ไทย</a>
+                        <a class="dropdown-item active" href="#"><span class="flag-eng"></span>English</a>
                     </div>
                 </div>
             </nav>
@@ -56,18 +57,27 @@
                 </div>
             </div>
             <div class="banner-right">
-
-                <img src="~/images/banner1.png" alt="Banner" />
+                <div class="device-holder">
+                    <div class="device-holder-inner">
+                        <div id="banner-carousel" class="owl-carousel owl-theme">
+                            <div class="item"><img src="~/images/banner/banner1.png" /></div>
+                            <div class="item"><img src="~/images/banner/banner2.png" /></div>
+                            <div class="item"><img src="~/images/banner/banner3.png" /></div>
+                            <div class="item"><img src="~/images/banner/banner4.png" /></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <div id="features" class="features">
+    <h1 class="page-title feature-title">Features</h1>
     <div class="page-container features-container">
         <div class="features-image">
             <img src="~/images/banner1.png" />
         </div>
-        <div>
+        <div class="features-list">
             <div class="block">
                 <div class="block-circle">
                     <span class="icon-real-time-update"></span>
@@ -115,7 +125,10 @@
                     </p>
                 </div>
             </div>
-
+        </div>
+    </div>
+    <div class="page-container features-container">
+        <div class="features-list">
             <div class="block">
                 <div class="block-circle">
                     <span class="icon-tv-channel"></span>
@@ -164,11 +177,14 @@
                 </div>
             </div>
         </div>
+        <div class="features-image">
+            <img src="~/images/banner1.png" />
+        </div>
     </div>
 </div>
-<div id="helpcenter" class="helpcenter page-container">
-    <div class="">
-        <h1 class="helpcenter-title">how can we help you</h1>
+<div id="helpcenter" class="helpcenter">
+    <div class="helpcenter-container">
+        <h1 class="page-title">how can we help you</h1>
         <div class="search-box">
             <input type="text" class="search-text" placeholder="TYPE KEYWORD TO FIND ANSWER" />
             <span class="icon-search"></span>
@@ -250,66 +266,291 @@
     </div>
 </div>
 <div id="ratingreviews" class="ratingreviews">
-    <div class="user-rating">
-        <img class="avatar" src="~/images/user1.png" />
-        <div class="rating">
-            <span class="icon-favorite"></span>
-            <span class="icon-favorite"></span>
-            <span class="icon-favorite"></span>
-            <span class="icon-favorite"></span>
-            <span class="icon-favorite"></span>
+    <div class="page-container">
+        <h1 class="page-title ratingreviews-title">Reviews and Rating</h1>
+
+        <div class="ratingreviews-carousel center">
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user1.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">I use it every week to update the live results of all football matches. Great app!</p>
+                <div class="name">Leo293</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user2.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">Nice UI design that looks simple and intuitive, very easy to use</p>
+                <div class="name">Xavier</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user3.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">A free football app with fully functional and no advertisements, great job!</p>
+                <div class="name">Owen</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user4.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">This app delivers the most valuable information about each match and it is very easy to navigate.</p>
+                <div class="name">Brianna</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user5.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">With many functions but simple operation, it can completely replace all other live score apps. Love it! Thanks for your hard work.</p>
+                <div class="name">Gavin</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user6.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">Simple design. Great information.</p>
+                <div class="name">Paul26577</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user7.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">Fast, simple UI and the developer keeps adding new features, worth to use.</p>
+                <div class="name">Alexis</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user8.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">No advertisements or annoying messages, this app truly focus on privacy.</p>
+                <div class="name">Riley</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user9.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">Super useful app. I can follow every single match of my favorite team.</p>
+                <div class="name">William</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user10.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">Great visualization, very fast update on every single event of live matches, and statistics or line-ups of 2 teams. One big vote for Score247.</p>
+                <div class="name">Jack221</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user11.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">I love the room chat where I can share my idea of the match and support my favorite team with other people.</p>
+                <div class="name">John Smith</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user12.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">I really like this app and it keeps me updated about my favorite teams and tournaments.</p>
+                <div class="name">Doforza</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user5.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">App supports real-time match information and sends the notification to user. 5 stars.</p>
+                <div class="name">Robomini</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user14.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">Light weight and good design app.</p>
+                <div class="name">Iceninja8844</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user15.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">As a football fan, thank you for this wonderful app! Friendly, simple and detailed information, even TV schedule of matches are included. Good job. </p>
+                <div class="name">Jay</div>
+            </div>
+
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user16.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">This app has everything, from league’s table, league’s fixtures to “live today” and everything. On the scale of 5, this app deserves 6 stars from me.</p>
+                <div class="name">Aringarosa</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user17.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">Great to stay informed with all the latest news and notifications.</p>
+                <div class="name">Catherline</div>
+            </div>
+            <div class="user-rating">
+                <img class="avatar" src="~/images/user-rating/user18.png" />
+                <div class="rating">
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                    <span class="icon-favorite"></span>
+                </div>
+                <p class="commentary">I always can stay up-to-date with the detailed live text commentary on my favorite matches. Nice design and easy to use. Good job guys.</p>
+                <div class="name">Pierre Celier</div>
+            </div>
         </div>
-        <p class="commentary">With many functions but simple operation, it can completely replace all other live score apps. Love it! Thanks for your hard work.</p>
-        <div class="name">Gavin</div>
     </div>
 </div>
-<div id="contact" class="contact">
-    <h1 class="contact-title">Get in touch with us!</h1>
-    <p class="get-in-touch">
-        Whether you’re curious about job openings, have a great idea for a partnership, or just want to drop us a line – Please get in touch with us via the form below. We look forward to hearing from you!
-    </p>
-    <form class="contact-form">
-        <input type="text" class="contact-control" placeholder="Your email address" />
-        <input type="text" class="contact-control" placeholder="Subject" />
-        <textarea class="contact-control message" placeholder="Message"></textarea>
-        <button class="btn-send">send message</button>
-    </form>
+<div id="contact" class="contact page-container">
+    <div class="contact-intro">
+        <h1 class="page-title">Get in touch with us!</h1>
+        <p class="get-in-touch">
+            Whether you’re curious about job openings, have a great idea for a partnership, or just want to drop us a line – Please get in touch with us via the form below. We look forward to hearing from you!
+        </p>
+    </div>
+
+    <div class="contact-container">
+        <form class="contact-form">
+            <input type="text" class="contact-control" placeholder="Your email address" />
+            <input type="text" class="contact-control" placeholder="Subject" />
+            <textarea class="contact-control message" placeholder="Message"></textarea>
+            <button class="btn-send">send message</button>
+        </form>
+    </div>
 </div>
 <footer>
-    <h1 class="group-title">site map</h1>
-    <ul class="list-items">
-        <li>Features</li>
-        <li>Help Center</li>
-        <li>Rating & Reviews</li>
-        <li>Contact Us</li>
-    </ul>
-    <h1 class="group-title">download</h1>
-    <ul class="list-items">
-        <li>App store</li>
-        <li>google play</li>
-    </ul>
-    <h1 class="group-title">let’s connect</h1>
-    <ul class="list-items">
-        <li>Lot 40, plastic valley, hcmc, vietnam</li>
-        <li>084824681012</li>
-        <li>cs@score247.com</li>
-    </ul>
-    <ul class="list-items social">
-        <li>
-            <div class="circle">
-                <span class="icon-fb"></span>
-            </div>
-        </li>
-        <li>
-            <div class="circle">
-                <span class="icon-instagram"></span>
-            </div>
-        </li>
-        <li>
-            <div class="circle">
-                <span class="icon-twitter"></span>
-            </div>
-        </li>
-    </ul>
+    <div class="footer-container page-container">
+        <img src="~/images/logo-large.png" alt="Score247" class="footer-logo" width="178" height="36" />
+        <div>
+            <h1 class="group-title">site map</h1>
+            <ul class="list-items">
+                <li>Features</li>
+                <li>Help Center</li>
+                <li>Rating & Reviews</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="group-title">download</h1>
+            <ul class="list-items">
+                <li>App store</li>
+                <li>google play</li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="group-title">let’s connect</h1>
+            <ul class="list-items">
+                <li>Lot 40, plastic valley, hcmc, vietnam</li>
+                <li>084824681012</li>
+                <li>cs@score247.com</li>
+            </ul>
+            <ul class="list-items social">
+                <li>
+                    <div class="circle">
+                        <span class="icon-fb"></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle">
+                        <span class="icon-instagram"></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle">
+                        <span class="icon-twitter"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <p class="copyright">© 2019 Score247, Inc. All right reserved </p>
 </footer>

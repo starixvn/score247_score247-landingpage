@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Score247LandingPage';
-  src:  url('fonts/Score247LandingPage.eot?3wyfy8');
-  src:  url('fonts/Score247LandingPage.eot?3wyfy8#iefix') format('embedded-opentype'),
-    url('fonts/Score247LandingPage.ttf?3wyfy8') format('truetype'),
-    url('fonts/Score247LandingPage.woff?3wyfy8') format('woff'),
-    url('fonts/Score247LandingPage.svg?3wyfy8#Score247LandingPage') format('svg');
+  src:  url('fonts/Score247LandingPage.eot?dxafn6');
+  src:  url('fonts/Score247LandingPage.eot?dxafn6#iefix') format('embedded-opentype'),
+    url('fonts/Score247LandingPage.ttf?dxafn6') format('truetype'),
+    url('fonts/Score247LandingPage.woff?dxafn6') format('woff'),
+    url('fonts/Score247LandingPage.svg?dxafn6#Score247LandingPage') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-left:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-arrow-right:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-check:before {
+  content: "\e901";
+  color: #0f0;
+}
 .icon-arrow-down:before {
   content: "\e900";
   color: #909198;

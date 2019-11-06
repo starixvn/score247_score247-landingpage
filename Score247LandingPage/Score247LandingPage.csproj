@@ -18,6 +18,8 @@
   <ItemGroup>
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
+    <None Include="wwwroot\fonts\demo-files\demo.js" />
+    <None Include="wwwroot\fonts\fonts\Score247LandingPage.svg" />
   </ItemGroup>
 
   <ItemGroup>
