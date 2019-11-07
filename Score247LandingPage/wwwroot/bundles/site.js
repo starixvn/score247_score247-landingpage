@@ -7075,6 +7075,19 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 $(function () {
     "use strict";
 
+    $('a.page-scroll[href*="#"]:not([href="#"])').on('click', function () {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1200, "easeInOutExpo");
+                return false;
+            }
+        }
+    });
+
     //===== Sticky
 
     $(window).on('scroll', function (event) {
@@ -7103,6 +7116,7 @@ $(function () {
         });
     });
 
+    // Banner carousel
     $("#banner-carousel").owlCarousel({
         autoplay: true,
         autoPlayTimeout: 6000,
@@ -7112,6 +7126,7 @@ $(function () {
         loop: true
     });
 
+    // Rating reviews
     $('.ratingreviews-carousel').slick({
         autoplay: true,
         autoplaySpeed: 5000,
@@ -7137,18 +7152,17 @@ $(function () {
             }
         ]
     });
-});
-$(function () {
-    $('a.page-scroll[href*="#"]:not([href="#"])').on('click', function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: (target.offset().top - 70)
-                }, 1200, "easeInOutExpo");
-                return false;
-            }
-        }
+
+    $('.qa').each(function () {
+        var tis = $(this),
+            state = false,
+            answer = tis.children('.anwser').slideDown(),
+            fullAnswer = tis.children('.anwser-full').slideUp();
+        tis.click(function () {
+            state = !state;
+            answer.slideToggle(state);
+            fullAnswer.slideToggle(!state);
+            tis.toggleClass('active', state);
+        });
     });
 });

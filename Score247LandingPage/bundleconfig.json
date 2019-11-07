@@ -7,8 +7,7 @@
       "wwwroot/js/jquery.easing.min.js",
       "wwwroot/lib/slick/slick.min.js",
       "wwwroot/lib/OwlCarousel/owl.carousel.min.js",
-      "wwwroot/js/site.js",
-      "wwwroot/js/scrolling-nav.js"
+      "wwwroot/js/site.js"
     ]
   },
   {
