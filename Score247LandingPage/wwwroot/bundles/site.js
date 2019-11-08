@@ -7072,10 +7072,10 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your Javascript code.
-$(function () {
+$(function() {
     "use strict";
 
-    $('a.page-scroll[href*="#"]:not([href="#"])').on('click', function () {
+    $('a.page-scroll[href*="#"]:not([href="#"])').on('click', function() {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -7090,7 +7090,7 @@ $(function () {
 
     //===== Sticky
 
-    $(window).on('scroll', function (event) {
+    $(window).on('scroll', function(event) {
         var scroll = $(window).scrollTop();
         if (scroll < 5) {
             $(".navbar-area").removeClass("sticky");
@@ -7103,10 +7103,10 @@ $(function () {
 
     var scrollLink = $('.page-scroll');
     // Active link switching
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         var scrollbarLocation = $(this).scrollTop();
 
-        scrollLink.each(function () {
+        scrollLink.each(function() {
             var sectionOffset = $(this.hash).offset().top - 40;
 
             if (sectionOffset <= scrollbarLocation) {
@@ -7129,7 +7129,7 @@ $(function () {
     // Rating reviews
     $('.ratingreviews-carousel').slick({
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 2000,
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 3,
@@ -7153,16 +7153,33 @@ $(function () {
         ]
     });
 
-    $('.qa').each(function () {
+    $('.qa').each(function() {
         var tis = $(this),
             state = false,
             answer = tis.children('.anwser').slideDown(),
             fullAnswer = tis.children('.anwser-full').slideUp();
-        tis.click(function () {
+        tis.click(function() {
             state = !state;
             answer.slideToggle(state);
             fullAnswer.slideToggle(!state);
             tis.toggleClass('active', state);
         });
+    });
+
+    $('#hambuger').click(function() {
+        $(this).toggleClass('open');
+
+        if ($(this).hasClass('open')) {
+            $('#sidebar').removeClass('slide-left');
+            $('#sidebar').addClass('slide-right');
+        } else {
+            $('#sidebar').removeClass('slide-right ');
+            $('#sidebar').addClass('slide-left ');
+        }
+    });
+
+    $('.page-scroll').on("click", function() {
+        $('#hambuger').toggleClass('open');
+        $('#sidebar').addClass('slide-left ');
     });
 });
