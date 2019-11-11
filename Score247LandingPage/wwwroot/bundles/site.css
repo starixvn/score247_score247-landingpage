@@ -10589,8 +10589,12 @@ a, a:hover {
   .navbar-toggler {
     position: absolute;
     left: 0;
-    top: 16px;
+    top: 0;
+    padding: 16px;
+    outline: none !important;
     z-index: 999; }
+    .navbar-toggler:hover {
+      cursor: pointer; }
   .navbar-toggler[aria-expanded="false"] {
     position: static;
     width: 0; }
@@ -10656,11 +10660,6 @@ a, a:hover {
   -o-transition: all .3s ease-out 0s;
   transition: all .3s ease-out 0s; }
 
-.navbar-toggler {
-  padding: 0;
-  margin-left: 16px;
-  outline: none !important; }
-
 @media (min-width: 1025px) {
   .navbar-area.sticky {
     position: fixed;
@@ -10707,7 +10706,7 @@ a, a:hover {
   .banner .device-holder {
     position: relative;
     width: 335px;
-    height: 699px;
+    height: 632px;
     margin-top: 30px;
     background: url(../images/iphone-frame-375.png) no-repeat center top;
     background-size: contain; }
@@ -11021,6 +11020,9 @@ footer {
       font-size: 14px;
       color: #fff;
       font-weight: 300; }
+    footer .list-items a {
+      color: #fff;
+      cursor: pointer; }
   footer .social {
     width: 120px;
     margin: 0 auto 64px;
@@ -11111,9 +11113,10 @@ footer {
   line-height: 0;
   position: absolute;
   top: 30%;
+  z-index: 999;
   display: block;
-  width: 20px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   padding: 0;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
