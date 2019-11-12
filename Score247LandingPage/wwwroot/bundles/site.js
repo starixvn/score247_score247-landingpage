@@ -7088,6 +7088,11 @@ $(function () {
         }
     });
 
+    $('.page-scroll').on("click", function () {
+        $('#hambugerBox #hambugerIcon').toggleClass('open');
+        $('#sidebar').addClass('slide-left ');
+    });
+
     //===== Sticky
 
     $(window).on('scroll', function (event) {
@@ -7176,10 +7181,5 @@ $(function () {
             $('#sidebar').removeClass('slide-right ');
             $('#sidebar').addClass('slide-left ');
         }
-    });
-
-    $('.page-scroll').on("click", function () {
-        $('#hambuger').toggleClass('open');
-        $('#sidebar').addClass('slide-left ');
     });
 });

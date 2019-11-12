@@ -25,6 +25,7 @@ a, a:hover {
         .nav-container {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
     }
 
@@ -33,6 +34,7 @@ a, a:hover {
 
         @media(min-width: 1024px) {
             display: block;
+            margin-left: 16px;
         }
     }
 
@@ -99,6 +101,7 @@ a, a:hover {
         border-radius: 2px;
         left: auto;
         right: 0;
+        margin-top: -10px;
 
         .dropdown-item {
             padding: 0 12px;
@@ -130,149 +133,153 @@ a, a:hover {
     }
 }
 
-.navbar-area {
-    padding: 0;
-    margin-top: 32px;
-    margin-bottom: 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.navbar-toggler {
+    padding: 16px;
+    outline: none !important;
     z-index: 999;
-    -webkit-transition: all .3s ease-out 0s;
-    -moz-transition: all .3s ease-out 0s;
-    -ms-transition: all .3s ease-out 0s;
-    -o-transition: all .3s ease-out 0s;
-    transition: all .3s ease-out 0s;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.navbar-toggler[aria-expanded="false"] {
+    position: static;
+    width: 0;
+}
+
+.navbar-area {
+    margin-top: 0;
+
+    @media(min-width: 1024px) {
+        padding: 0;
+        margin-top: 32px;
+        margin-bottom: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        transition: all .3s ease-out 0s;
+    }
+
+    .sub-menu-bar {
+        position: fixed;
+        top: 0;
+        left: -30rem;
+        min-width: 30rem;
+        height: 100vh;
+        z-index: 8;
+        background-color: #0D0F15;
+        transition: all .4s ease-in-out;
+
+        @media(min-width: 1024px) {
+            position: initial;
+            height: initial;
+            background-color: transparent;
+        }
+    }
 
     .navbar {
         position: relative;
-        padding: 0
+        display: flex;
+        width: 100%;
+        padding: 0;
+
+        @media(min-width: 1024px) {
+            width: auto;
+        }
+    }
+
+    .dropdown.language {
+        float: right;
+        line-height: 52px;
+        margin-right: 16px;
+
+        @media(min-width: 1024px) {
+            margin-right: 0;
+        }
     }
 
     .navbar .navbar-nav {
-        margin-right: 24px;
+        margin-right: 0;
+        margin-top: 70px;
+
+        @media(min-width: 1024px) {
+            margin-top: 0;
+            margin-right: 24px;
+        }
 
         .nav-item {
             position: relative
         }
 
         .nav-item a {
-            font-size: 12px;
-            font-weight: 600;
+            position: relative;
+            display: block;
             line-height: 24px;
-            padding: 12px 16px;
+            padding: 24px 64px;
             color: #fff;
             text-transform: uppercase;
-            position: relative;
-            transition: all .3s ease-out 0s;
-            margin: 14px 0;
+            font-size: 14px;
+            font-weight: 300;
+
+            @media(min-width: 1024px) {
+                font-size: 12px;
+                font-weight: 600;
+                padding: 12px 16px;
+                transition: all .3s ease-out 0s;
+            }
         }
 
         .nav-item.active a {
             color: #FF9900;
         }
     }
+
+    &.sticky {
+        .navbar {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 52px;
+            z-index: 800;
+            background-color: #0D0F15;
+
+            @media(min-width: 1024px) {
+                position: initial;
+            }
+        }
+    }
 }
 
-@media(max-width:767px) {
-    .navbar-toggler {
-        position: absolute;
-        left: 0;
-        top: 0;
-        padding: 16px;
-        outline: none !important;
-        z-index: 999;
-
-        &:hover {
-            cursor: pointer;
-        }
+@keyframes slide-right {
+    0% {
+        transform: translateX(0)
     }
 
-    .navbar-toggler[aria-expanded="false"] {
-        position: static;
-        width: 0;
+    100% {
+        transform: translateX(30rem)
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(30rem)
     }
 
-    .navbar-area {
-        margin-top: 0;
-
-        .sub-menu-bar {
-            position: fixed;
-            top: 0;
-            left: -30rem;
-            min-width: 30rem;
-            background: #0D0F15;
-            height: 100vh;
-            z-index: 8;
-            box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
-            transition: all .4s ease-in-out;
-        }
-
-        .navbar {
-            display: block;
-        }
-
-        .dropdown.language {
-            float: right;
-            line-height: 52px;
-        }
-
-        .navbar .navbar-nav {
-            margin-right: 0;
-            margin-top: 70px;
-
-            .nav-item a {
-                padding: 24px 64px;
-                display: block;
-                border: 0;
-                margin: 0;
-                color: #fff;
-                font-size: 14px;
-                font-weight: 300;
-            }
-        }
-
-        &.sticky {
-            .navbar {
-                position: fixed;
-                left: 0;
-                right: 0;
-                top: 0;
-                height: 52px;
-                z-index: 800;
-                background-color: #0D0F15;
-            }
-        }
+    100% {
+        transform: translateX(0)
     }
+}
 
-    @keyframes slide-right {
-        0% {
-            transform: translateX(0)
-        }
+.slide-right {
+    animation: slide-right .5s cubic-bezier(.25,.46,.45,.94) both
+}
 
-        100% {
-            transform: translateX(30rem)
-        }
-    }
-
-    @keyframes slide-left {
-        0% {
-            transform: translateX(30rem)
-        }
-
-        100% {
-            transform: translateX(0)
-        }
-    }
-
-    .slide-right {
-        animation: slide-right .5s cubic-bezier(.25,.46,.45,.94) both
-    }
-
-    .slide-left {
-        animation: slide-left .5s cubic-bezier(.25,.46,.45,.94) both
-    }
+.slide-left {
+    animation: slide-left .5s cubic-bezier(.25,.46,.45,.94) both
 }
 
 .navbar-area .navbar .navbar-btn .menu-bar {
@@ -287,7 +294,7 @@ a, a:hover {
     transition: all .3s ease-out 0s
 }
 
-@media(min-width: 1025px) {
+@media(min-width: 1024px) {
     .navbar-area.sticky {
         position: fixed;
         padding: 10px 0;
@@ -296,7 +303,7 @@ a, a:hover {
     }
 }
 
-@media(min-width: 1025px) {
+@media(min-width: 1024px) {
     .banner-container {
         display: flex;
         justify-content: space-between;
@@ -310,7 +317,7 @@ a, a:hover {
 .banner {
     padding: 90px 20px 0 20px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         padding-top: 160px;
     }
 
@@ -339,7 +346,7 @@ a, a:hover {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 30px;
 
-        @media(min-width: 1025px) {
+        @media(min-width: 1024px) {
             display: flex;
             justify-content: start;
 
@@ -353,7 +360,7 @@ a, a:hover {
         position: relative;
         width: 335px;
         height: 632px;
-        margin-top: 30px;
+        margin: 30px auto auto;
         background: url(../images/iphone-frame-375.png) no-repeat center top;
         background-size: contain;
     }
@@ -365,10 +372,10 @@ a, a:hover {
         top: 18px;
     }
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         .device-holder {
-            width: 375px;
             width: 640px;
+            height: 699px;
             background-image: url(../images/iphone-frame.png);
             background-size: contain;
         }
@@ -385,11 +392,14 @@ a, a:hover {
 %button-banner {
     border: none;
     height: 44px;
-    width: 156px;
     border-radius: 33px;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
+
+    @media(min-width: 1024px) {
+        width: 156px;
+    }
 
     &:focus, &:active {
         outline: none;
@@ -424,7 +434,7 @@ a, a:hover {
     line-height: 22px;
     text-transform: uppercase;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         font-size: 32px;
     }
 }
@@ -438,7 +448,7 @@ a, a:hover {
     display: none;
 }
 
-@media(min-width: 1025px) {
+@media(min-width: 1024px) {
     .feature-title {
         display: block;
         margin-top: 66px;
@@ -452,6 +462,16 @@ a, a:hover {
         .features-image {
             display: block;
         }
+
+        img {
+            width: 518px;
+        }
+    }
+}
+
+@media(min-width: 1366px) {
+    .features-container img {
+        width: 640px;
     }
 }
 
@@ -464,7 +484,7 @@ a, a:hover {
     padding: 24px 20px;
     text-align: center;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         display: grid;
         justify-content: space-between;
         align-items: flex-start;
@@ -474,7 +494,7 @@ a, a:hover {
         grid-gap: 16px;
     }
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         .feature {
             padding-top: 26px;
         }
@@ -505,7 +525,7 @@ a, a:hover {
     height: 72px;
     width: 72px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         margin: 0;
     }
 
@@ -519,7 +539,7 @@ a, a:hover {
     background-color: #191D28;
     padding-bottom: 30px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         padding-top: 50px;
         padding-bottom: 212px;
     }
@@ -530,7 +550,7 @@ a, a:hover {
     background-size: contain;
     padding-top: 90px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         width: 720px;
         margin: auto;
     }
@@ -540,7 +560,7 @@ a, a:hover {
     position: relative;
     margin: 0 20px 32px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         width: 488px;
         margin: 20px auto 32px;
     }
@@ -557,7 +577,7 @@ a, a:hover {
         text-transform: lowercase;
         font-size: 16px;
 
-        @media(min-width: 1025px) {
+        @media(min-width: 1024px) {
             font-size: 12px;
             height: 44px;
         }
@@ -627,7 +647,7 @@ a, a:hover {
 .ratingreviews-title {
     display: none;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         display: block;
     }
 }
@@ -637,7 +657,7 @@ a, a:hover {
     background-size: cover;
     padding-top: 68px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         background-size: auto;
     }
 
@@ -676,7 +696,7 @@ a, a:hover {
     padding-bottom: 20px;
     background-color: #13161E;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         padding-top: 64px;
         padding-bottom: 30px;
     }
@@ -688,7 +708,7 @@ a, a:hover {
     text-align: center;
     font-size: 13px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         width: 488px;
         margin: 30px auto auto;
     }
@@ -711,7 +731,7 @@ a, a:hover {
     background: url(../images/mapbackground.png) center top no-repeat;
     padding: 30px 16px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         .contact-form {
             width: 488px;
             margin: auto;
@@ -722,6 +742,7 @@ a, a:hover {
         display: block;
         width: 100%;
         height: 44px;
+        line-height: 44px;
         background: #2D2F3B;
         border: 1px solid #909198;
         border-radius: 3px;
@@ -730,12 +751,15 @@ a, a:hover {
         color: #CCC;
         font-size: 16px;
 
-        @media(min-width: 1025px) {
+        @media(min-width: 1024px) {
             font-size: 12px;
         }
 
         &.message {
-            height: 116px
+            height: 116px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 20px;
         }
     }
 }
@@ -744,7 +768,7 @@ a, a:hover {
 footer {
     padding: 30px 16px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -752,7 +776,7 @@ footer {
     .footer-logo {
         display: none;
 
-        @media(min-width: 1025px) {
+        @media(min-width: 1024px) {
             display: block;
         }
     }
@@ -807,13 +831,13 @@ footer {
     .copyright {
         text-align: center;
 
-        @media(min-width: 1025px) {
+        @media(min-width: 1024px) {
             line-height: 72px;
             border-top: 1px solid rgba(225,225,225,0.05);
         }
     }
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         .footer-container {
             display: flex;
             justify-content: space-between;
@@ -937,7 +961,7 @@ footer {
 .slick-prev {
     left: 12px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         left: -25px;
     }
 
@@ -949,7 +973,7 @@ footer {
 .slick-next {
     right: 12px;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         right: -25px;
     }
 
