@@ -1,0 +1,36 @@
+﻿.owl-carousel .owl-item {
+    float: left;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+}
+
+.owl-dots {
+    margin: 16px auto;
+    text-align: center;
+
+    .owl-dot:focus,
+    .owl-dot:active {
+        outline: none;
+    }
+}
+
+.owl-dots .owl-dot span {
+    background: transparent;
+}
+
+.owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin: 5px 7px;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+    background: #fff;
+}
