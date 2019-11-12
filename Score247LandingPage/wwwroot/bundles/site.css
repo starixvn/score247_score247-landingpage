@@ -10721,7 +10721,7 @@ a, a:hover {
     position: relative;
     width: 335px;
     height: 632px;
-    margin: 30px auto auto;
+    margin: 30px auto 0;
     background: url(../images/iphone-frame-375.png) no-repeat center top;
     background-size: contain; }
   .banner .device-holder-inner {
@@ -10733,6 +10733,7 @@ a, a:hover {
     .banner .device-holder {
       width: 640px;
       height: 699px;
+      margin-top: 0;
       background-image: url(../images/iphone-frame.png);
       background-size: contain; }
     .banner .device-holder-inner {
