@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Score247LandingPage.LocalizationResources;
+using WebEssentials.AspNetCore.Pwa;
 
 namespace Score247LandingPage
 {
@@ -48,6 +49,8 @@ namespace Score247LandingPage
                         };
                     })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddProgressiveWebApp(new PwaOptions { AllowHttp = true });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
