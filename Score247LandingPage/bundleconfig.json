@@ -5,7 +5,6 @@
       "wwwroot/lib/jquery/dist/jquery.min.js",
       "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "wwwroot/js/jquery.easing.min.js",
-      "wwwroot/lib/slick/slick.min.js",
       "wwwroot/lib/OwlCarousel/owl.carousel.min.js",
       "wwwroot/js/site.js"
     ]
@@ -16,8 +15,6 @@
       "wwwroot/fonts/style.css",
       "wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "wwwroot/lib/OwlCarousel/owl.carousel.min.css",
-      "wwwroot/lib/slick/slick.css",
-      "wwwroot/lib/slick/slick-theme.css",
       "wwwroot/scss/site.css"
     ]
   }

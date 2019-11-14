@@ -1,6 +1,5 @@
 ﻿@import "components/_buttons";
 @import "components/_customize-owl-carousel";
-@import "components/_customize-slick";
 
 body {
     background-color: #13161E;
@@ -574,7 +573,7 @@ a, a:hover {
 
     @media(min-width: 1024px) {
         padding-top: 50px;
-        padding-bottom: 212px;
+        padding-bottom: 60px;
     }
 }
 
@@ -672,57 +671,6 @@ a, a:hover {
     .anwser-full {
         @extend .anwser;
         display: none;
-    }
-}
-
-// ratingreviews
-.ratingreviews-title {
-    display: none;
-
-    @media(min-width: 1024px) {
-        display: block;
-    }
-}
-
-.ratingreviews-carousel {
-    height: 416px;
-}
-
-.ratingreviews {
-    background: url(../images/rating-background.jpg) #000 no-repeat top;
-    background-size: cover;
-    padding-top: 68px;
-
-    @media(min-width: 1024px) {
-        background-size: auto;
-    }
-
-    .user-rating {
-        display: none;
-        text-align: center;
-        padding-top: 40px;
-    }
-
-    .avatar {
-        width: 164px;
-        height: 164px;
-        margin: auto;
-    }
-
-    .rating {
-        margin-top: 20px;
-        margin-bottom: 16px;
-    }
-
-    .commentary {
-        line-height: 1.5;
-        padding: 0 16px;
-    }
-
-    .name {
-        padding: 0 16px;
-        font-weight: 700;
-        text-transform: uppercase;
     }
 }
 
@@ -829,27 +777,6 @@ footer {
         }
     }
 
-    .social {
-        width: 120px;
-        margin: 0 auto 64px;
-        overflow: hidden;
-
-        li {
-            float: left;
-            margin: 0 8px;
-
-            .circle {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 24px;
-                height: 24px;
-                border-radius: 12px;
-                background-color: #191D28;
-            }
-        }
-    }
-
     .copyright {
         text-align: center;
 
@@ -875,6 +802,14 @@ footer {
         .social {
             margin-left: 0;
             margin-bottom: 0;
+        }
+
+        .footer-right {
+            display: flex;
+        }
+
+        .site-map {
+            margin-right: 170px;
         }
     }
 }

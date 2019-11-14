@@ -55,62 +55,6 @@
 .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
   background: #fff; }
 
-.slick-slide {
-  outline: none; }
-  .slick-slide .user-rating .avatar {
-    opacity: 0.8;
-    transition: all 300ms ease;
-    transform: scale(0.7); }
-  .slick-slide .rating, .slick-slide .commentary, .slick-slide .name {
-    display: none; }
-
-.center .slick-center .avatar {
-  opacity: 1;
-  transform: scale(1.08); }
-
-.center .slick-center .rating, .center .slick-center .commentary, .center .slick-center .name {
-  display: block; }
-
-.slick-prev, .slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 30%;
-  z-index: 999;
-  display: block;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent; }
-  .slick-prev:before, .slick-next:before {
-    display: inline-block;
-    font-family: 'Score247LandingPage';
-    font-size: 36px;
-    color: rgba(255, 255, 255, 0.5); }
-
-.slick-prev {
-  left: 12px; }
-  @media (min-width: 1024px) {
-    .slick-prev {
-      left: -25px; } }
-  .slick-prev:before {
-    content: "\e902"; }
-
-.slick-next {
-  right: 12px; }
-  @media (min-width: 1024px) {
-    .slick-next {
-      right: -25px; } }
-  .slick-next:before {
-    content: "\e903"; }
-
 body {
   background-color: #13161E;
   font-family: 'Montserrat', Arial, Tahoma, sans-serif;
@@ -528,7 +472,7 @@ a, a:hover {
   @media (min-width: 1024px) {
     .helpcenter {
       padding-top: 50px;
-      padding-bottom: 212px; } }
+      padding-bottom: 60px; } }
 
 .helpcenter-container {
   background: url(../images/helpcenterbackground.png) no-repeat top;
@@ -601,41 +545,6 @@ a, a:hover {
     color: rgba(255, 255, 255, 0.64); }
   .list-qa .anwser-full {
     display: none; }
-
-.ratingreviews-title {
-  display: none; }
-  @media (min-width: 1024px) {
-    .ratingreviews-title {
-      display: block; } }
-
-.ratingreviews-carousel {
-  height: 416px; }
-
-.ratingreviews {
-  background: url(../images/rating-background.jpg) #000 no-repeat top;
-  background-size: cover;
-  padding-top: 68px; }
-  @media (min-width: 1024px) {
-    .ratingreviews {
-      background-size: auto; } }
-  .ratingreviews .user-rating {
-    display: none;
-    text-align: center;
-    padding-top: 40px; }
-  .ratingreviews .avatar {
-    width: 164px;
-    height: 164px;
-    margin: auto; }
-  .ratingreviews .rating {
-    margin-top: 20px;
-    margin-bottom: 16px; }
-  .ratingreviews .commentary {
-    line-height: 1.5;
-    padding: 0 16px; }
-  .ratingreviews .name {
-    padding: 0 16px;
-    font-weight: 700;
-    text-transform: uppercase; }
 
 .contact-intro {
   padding-top: 44px;
@@ -712,21 +621,6 @@ footer {
     footer .list-items a {
       color: #fff;
       cursor: pointer; }
-  footer .social {
-    width: 120px;
-    margin: 0 auto 64px;
-    overflow: hidden; }
-    footer .social li {
-      float: left;
-      margin: 0 8px; }
-      footer .social li .circle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 24px;
-        height: 24px;
-        border-radius: 12px;
-        background-color: #191D28; }
   footer .copyright {
     text-align: center; }
     @media (min-width: 1024px) {
@@ -744,4 +638,8 @@ footer {
       text-align: left; }
     footer .social {
       margin-left: 0;
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+    footer .footer-right {
+      display: flex; }
+    footer .site-map {
+      margin-right: 170px; } }
