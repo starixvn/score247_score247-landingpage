@@ -2,6 +2,10 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your Javascript code.
+document.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+}, { passive: true });
+
 $(function () {
     "use strict";
 
@@ -61,33 +65,6 @@ $(function () {
         loop: true
     });
 
-    // Rating reviews
-    $('.ratingreviews-carousel').slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
-
     $('.qa').each(function () {
         var tis = $(this),
             state = false,
@@ -113,3 +90,4 @@ $(function () {
         }
     });
 });
+
