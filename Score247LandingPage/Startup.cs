@@ -1,3 +1,4 @@
+using System;
 using System.Globalization;
 using LazZiya.ExpressLocalization;
 using Microsoft.AspNetCore.Builder;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Robotify.AspNetCore;
 using Score247LandingPage.LocalizationResources;
 using WebEssentials.AspNetCore.Pwa;
 
@@ -35,6 +37,11 @@ namespace Score247LandingPage
                 new CultureInfo("en"),
                 new CultureInfo("vi")
             };
+
+            //services.AddRobotify(c => c
+            //    .AddDisallowAllRobotGroupProvider()
+            //    .AddRobotGroupsFromAppSettings()
+            //);
 
             services.AddMvc()
                 .AddExpressLocalization<ExpressLocalizationResource, ViewLocalizationResource>(
@@ -68,6 +75,30 @@ namespace Score247LandingPage
             app.UseRequestLocalization();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            app.UseRobotsTxt(builder =>
+                builder
+                    .AddSection(section =>
+                        section
+                            .AddComment("Allow Googlebot")
+                            .AddUserAgent("Googlebot")
+                            .Allow("/")
+                        )
+                    .AddSection(section =>
+                        section
+                            .AddComment("Disallow the rest")
+                            .AddUserAgent("*")
+                            .AddCrawlDelay(TimeSpan.FromSeconds(10))
+                            .Disallow("/")
+                        )
+                    .AddSitemap("https://example.com/sitemap.xml")
+            );
+            //app.UseRobotify(c => c
+            //    .Enabled(true)
+            //    //.WithSitemap(new Uri("https://www.example.com/sitemap.xml"))
+            //    //.DisableFileHeaderComments()
+            //    //.WithCrawlDelay(delayInSeconds: 10)
+            //);
 
             app.UseMvc();
         }

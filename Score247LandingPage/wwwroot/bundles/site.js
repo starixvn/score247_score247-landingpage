@@ -7070,9 +7070,13 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your Javascript code.
-document.addEventListener('touchstart', (e) => {
+document.addEventListener('touchstart', function(e) {
     e.preventDefault();
 }, { passive: true });
+
+document.addEventListener('wheel', function (e) {
+    e.preventDefault();
+}, { passive: true })
 
 $(function () {
     "use strict";

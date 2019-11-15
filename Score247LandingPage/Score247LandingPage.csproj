@@ -28,6 +28,8 @@
     <PackageReference Include="LazZiya.TagHelpers.Localization" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Robotify.AspNetCore" Version="1.0.2" />
+    <PackageReference Include="RobotsTxtCore" Version="1.1.0" />
     <PackageReference Include="WebEssentials.AspNetCore.PWA" Version="1.0.59" />
   </ItemGroup>
 </Project>
