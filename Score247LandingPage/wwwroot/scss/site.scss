@@ -1,4 +1,5 @@
-﻿@import "components/_buttons";
+﻿@import "components/_fonts";
+@import "components/_buttons";
 @import "components/_customize-owl-carousel";
 
 body {
@@ -379,11 +380,11 @@ a, a:hover {
 }
 
 .slide-right {
-    animation: slide-right .5s cubic-bezier(.25,.46,.45,.94) both
+    animation: slide-right .3s cubic-bezier(.25,.46,.45,.94) both
 }
 
 .slide-left {
-    animation: slide-left .5s cubic-bezier(.25,.46,.45,.94) both
+    animation: slide-left .3s cubic-bezier(.25,.46,.45,.94) both
 }
 
 .banner {
@@ -736,80 +737,7 @@ a, a:hover {
 }
 
 // footer
-footer {
-    padding: 30px 16px;
-
-    @media(min-width: 1024px) {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .footer-logo {
-        display: none;
-
-        @media(min-width: 1024px) {
-            display: block;
-        }
-    }
-
-    .group-title {
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    .list-items {
-        list-style: none;
-        margin-bottom: 16px;
-        padding: 0;
-        text-align: center;
-
-        li {
-            line-height: 2;
-            color: #fff;
-            font-weight: 300;
-        }
-
-        a {
-            color: #fff;
-            cursor: pointer;
-        }
-    }
-
-    .copyright {
-        text-align: center;
-
-        @media(min-width: 1024px) {
-            line-height: 72px;
-            border-top: 1px solid rgba(225,225,225,0.05);
-        }
-    }
-
-    @media(min-width: 1024px) {
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-
-        .group-title,
-        .list-items {
-            text-align: left;
-        }
-
-        .social {
-            margin-left: 0;
-            margin-bottom: 0;
-        }
-
-        .footer-right {
-            display: flex;
-        }
-
-        .site-map {
-            margin-right: 170px;
-        }
-    }
+.copyright {
+    line-height: 72px;
+    text-align: center;
 }
