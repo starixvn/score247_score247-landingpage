@@ -2,9 +2,6 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your Javascript code.
-document.addEventListener('touchstart', function(e) {
-    e.preventDefault();
-}, { passive: true });
 
 $(function () {
     "use strict";
@@ -20,11 +17,6 @@ $(function () {
                 return false;
             }
         }
-    });
-
-    $('.page-scroll').on("click", function () {
-        $('#hambugerBox #hambugerIcon').toggleClass('open');
-        $('#sidebar').addClass('slide-left ');
     });
 
     //===== Sticky
@@ -78,16 +70,24 @@ $(function () {
         });
     });
 
-    $('#hambugerBox #hambugerIcon').click(function () {
-        $(this).toggleClass('open');
+    var screenWidth = screen.width || $(window).width();
+    if (screenWidth < 1024) {
+        $('#hambugerBox #hambugerIcon').click(function () {
+            $(this).toggleClass('open');
 
-        if ($(this).hasClass('open')) {
-            $('#sidebar').removeClass('slide-left');
-            $('#sidebar').addClass('slide-right');
-        } else {
-            $('#sidebar').removeClass('slide-right ');
+            if ($(this).hasClass('open')) {
+                $('#sidebar').removeClass('slide-left');
+                $('#sidebar').addClass('slide-right');
+            } else {
+                $('#sidebar').removeClass('slide-right ');
+                $('#sidebar').addClass('slide-left ');
+            }
+        });
+
+        $('.page-scroll').on("click", function () {
+            $('#hambugerBox #hambugerIcon').toggleClass('open');
             $('#sidebar').addClass('slide-left ');
-        }
-    });
+        });
+    }
 });
 
