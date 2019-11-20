@@ -7074,10 +7074,6 @@ document.addEventListener('touchstart', function(e) {
     e.preventDefault();
 }, { passive: true });
 
-document.addEventListener('wheel', function (e) {
-    e.preventDefault();
-}, { passive: true })
-
 $(function () {
     "use strict";
 
