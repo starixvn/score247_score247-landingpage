@@ -413,19 +413,11 @@ a, a:hover {
         font-size: 15px;
     }
 
-    .banner-buttons {
-        display: grid;
-        justify-content: space-between;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 30px;
+    .btn-white {
+        width: 100%;
 
         @media(min-width: 1024px) {
-            display: flex;
-            justify-content: start;
-
-            .btn-white {
-                margin-right: 24px;
-            }
+            width: 156px;
         }
     }
 

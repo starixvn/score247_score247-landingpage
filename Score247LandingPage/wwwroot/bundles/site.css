@@ -10170,27 +10170,19 @@ a.text-dark:hover, a.text-dark:focus {
   font-display: swap;
   src: url("../../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"); }
 
-.btn-white, .btn-white-outline, .btn-send {
+.btn-white, .btn-send {
   border: none;
   height: 44px;
   border-radius: 33px;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600; }
-  @media (min-width: 1024px) {
-    .btn-white, .btn-white-outline, .btn-send {
-      width: 156px; } }
-  .btn-white:focus, .btn-white-outline:focus, .btn-send:focus, .btn-white:active, .btn-white-outline:active, .btn-send:active {
+  .btn-white:focus, .btn-send:focus, .btn-white:active, .btn-send:active {
     outline: none; }
 
 .btn-white {
   background-color: #fff;
   color: #212431; }
-
-.btn-white-outline {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff; }
 
 .btn-send {
   background-color: #FF9900;
@@ -10529,17 +10521,11 @@ a, a:hover {
     line-height: 1.8;
     color: #fff;
     font-size: 15px; }
-  .banner .banner-buttons {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px; }
+  .banner .btn-white {
+    width: 100%; }
     @media (min-width: 1024px) {
-      .banner .banner-buttons {
-        display: flex;
-        justify-content: start; }
-        .banner .banner-buttons .btn-white {
-          margin-right: 24px; } }
+      .banner .btn-white {
+        width: 156px; } }
   .banner .device-holder {
     position: relative;
     width: 335px;

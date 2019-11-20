@@ -1,5 +1,5 @@
 ﻿// buttton
-%button-banner {
+%button {
     border: none;
     height: 44px;
     border-radius: 33px;
@@ -7,30 +7,19 @@
     text-transform: uppercase;
     font-weight: 600;
 
-    @media(min-width: 1024px) {
-        width: 156px;
-    }
-
     &:focus, &:active {
         outline: none;
     }
 }
 
 .btn-white {
-    @extend %button-banner;
+    @extend %button;
     background-color: #fff;
     color: #212431;
 }
 
-.btn-white-outline {
-    @extend %button-banner;
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-}
-
 .btn-send {
-    @extend %button-banner;
+    @extend %button;
     background-color: #FF9900;
     border-radius: 24px;
     color: #fff;
