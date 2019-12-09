@@ -70,8 +70,8 @@ $(function () {
         });
     });
 
-    var screenWidth = screen.width || $(window).width();
-    if (screenWidth < 1024) {
+    
+    if ($(window).width() < 1024) {
         $('#hambugerBox #hambugerIcon').click(function () {
             $(this).toggleClass('open');
 
