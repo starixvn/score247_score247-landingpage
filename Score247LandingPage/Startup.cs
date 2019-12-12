@@ -1,19 +1,18 @@
-using System;
-using System.Globalization;
-using LazZiya.ExpressLocalization;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Robotify.AspNetCore;
-using Score247LandingPage.LocalizationResources;
-using WebEssentials.AspNetCore.Pwa;
-
 namespace Score247LandingPage
 {
+    using System;
+    using System.Globalization;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Localization;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.Razor;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Score247LandingPage.LocalizationRouting;
+    using WebEssentials.AspNetCore.Pwa;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -43,18 +42,25 @@ namespace Score247LandingPage
             //    .AddRobotGroupsFromAppSettings()
             //);
 
+            services.Configure<RequestLocalizationOptions>(opts =>
+            {
+                opts.DefaultRequestCulture = new RequestCulture("en");
+                opts.SupportedCultures = cultures;
+                opts.SupportedUICultures = cultures;
+                opts.RequestCultureProviders.Insert(0, new RouteSegmentCultureProvider(cultures, "en"));
+            });
+
+            services.AddLocalization(opts =>
+            {
+                opts.ResourcesPath = "LocalizationResources";
+            });
+
             services.AddMvc()
-                .AddExpressLocalization<ExpressLocalizationResource, ViewLocalizationResource>(
-                    ops =>
-                    {
-                        ops.ResourcesPath = "LocalizationResources";
-                        ops.RequestLocalizationOptions = o =>
-                        {
-                            o.SupportedCultures = cultures;
-                            o.SupportedUICultures = cultures;
-                            o.DefaultRequestCulture = new RequestCulture("en");
-                        };
-                    })
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix, opts => opts.ResourcesPath = "LocalizationResources")
+                .AddRazorPagesOptions(x =>
+                {
+                    x.Conventions.Add(new RouteTemplateModelConvention());
+                })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddProgressiveWebApp(new PwaOptions { AllowHttp = true });
@@ -72,7 +78,6 @@ namespace Score247LandingPage
                 app.UseExceptionHandler("/Error");
             }
 
-            app.UseRequestLocalization();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
@@ -99,6 +104,7 @@ namespace Score247LandingPage
             //    //.DisableFileHeaderComments()
             //    //.WithCrawlDelay(delayInSeconds: 10)
             //);
+            app.UseRequestLocalization();
 
             app.UseMvc();
         }

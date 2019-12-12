@@ -1,0 +1,25 @@
+﻿@using Microsoft.Extensions.Options
+@using Microsoft.AspNetCore.Builder
+
+@inject IOptions<RequestLocalizationOptions> options
+
+<div class="dropdown language">
+    <button class="btn dropdown-toggle" type="button" aria-label="Language" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="flag-eng"></span>
+        <span class="icon-arrow-down"></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+        @foreach (var culture in options.Value.SupportedCultures)
+        {
+            <a class="dropdown-item active" href="/"><span class="flag-@culture."></span>English</a>
+
+        }
+        <a class="dropdown-item" href="#"><span class="flag-cn"></span>中文</a>
+        <a class="dropdown-item" href="#"><span class="flag-id"></span>Bahasa Indonesia</a>
+        <a class="dropdown-item" href="#"><span class="flag-my"></span>മലേഷ്യൻ</a>
+        <a class="dropdown-item" href="/vi"><span class="flag-vn"></span>Tiếng Việt</a>
+        <a class="dropdown-item" href="#"><span class="flag-th"></span>ไทย</a>
+        <a class="dropdown-item active" href="/"><span class="flag-eng"></span>English</a>
+    </div>
+</div>

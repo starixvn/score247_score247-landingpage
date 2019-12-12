@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppIntro" xml:space="preserve">
+    <value>&lt;span class="text-orange"&gt;ỨNG DỤNG&lt;/span&gt; hoàn hảo nhất cho thị trường</value>
+  </data>
+  <data name="AppIntroContent" xml:space="preserve">
+    <value>Score247 cập nhật thông tin một cách liên tục, nhanh chóng và chuẩn xác từ số bàn thắng đến số thẻ, lịch thi đấu, kết quả, số liệu trận đấu và cả những tin tức mới nhất... giúp bạn dễ dàng theo dõi các trận đấu yêu thích</value>
+  </data>
+  <data name="BallTrackerVisualization" xml:space="preserve">
+    <value>Mô phỏng diễn biến trận đấu</value>
+  </data>
+  <data name="BallTrackerVisualizationDetail" xml:space="preserve">
+    <value>Mô phỏng mọi diễn biến, tình huống nổi bật của trận đấu, nhờ vào công nghệ theo dõi chuyển động của trái bóng theo thời gian thực.</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Lịch thi đấu</value>
+  </data>
+  <data name="CalendarDetail" xml:space="preserve">
+    <value>Dễ dàng theo dõi lịch thi đấu của các sự kiện đã hoặc sắp diễn ra</value>
+  </data>
+  <data name="Question5" xml:space="preserve">
+    <value>Bảng xếp hạng có thể hiển thị thêm thông tin hay không?</value>
+  </data>
+  <data name="Question5Answer" xml:space="preserve">
+    <value>Bạn có thể nhấn vào biểu tượng Danh sách đầy đủ để xem thêm thông tin bổ sung. Ngoài ra bạn có thể chọn cách hiển thị bảng xếp hạng ở dạng Thu gọn (mặc định) hoặc Đầy đủ.</value>
+  </data>
+  <data name="Question5ShortAnswer" xml:space="preserve">
+    <value>Bạn có thể nhấn vào biểu tượng Danh sách đầy đủ...</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Tính năng</value>
+  </data>
+  <data name="HelpCenter" xml:space="preserve">
+    <value> Trợ giúp</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="HowCanWeHelpYou" xml:space="preserve">
+    <value>CHÚNG TÔI CÓ THỂ HỖ TRỢ GÌ CHO BẠN</value>
+  </data>
+  <data name="Question2" xml:space="preserve">
+    <value>Làm sao để thêm Giải đấu yêu thích?</value>
+  </data>
+  <data name="Question2Answer" xml:space="preserve">
+    <value>Từ trang chủ hoặc trang Trực tiếp, di chuyển đến trang Chi tiết Giải đấu bằng cách nhấn vào thanh tiêu đề tương ứng (dòng hiển thị tên giải đấu). Trong trang Chi tiết Giải đấu, nhấn vào hình "Ngôi sao" ở góc trên bên phải. Khi trở về trang chủ, giải đấu bạn chọn sẽ được hiển thị ở đầu trang.</value>
+  </data>
+  <data name="Question2ShortAnswer" xml:space="preserve">
+    <value>Từ trang chủ hoặc trang Trực tiếp...</value>
+  </data>
+  <data name="Question3" xml:space="preserve">
+    <value>Làm sao để thêm Trận đấu yêu thích?</value>
+  </data>
+  <data name="Question3Answer" xml:space="preserve">
+    <value>Trong danh sách trận đấu, nhấn vào hình "Ngôi sao" bên cạnh tên trận đấu, hoặc ở góc trên bên phải trong trang Chi tiết Trận đấu. Khi ngôi sao sáng lên, trận đấu đó đã được thêm vào mục yêu thích và bạn sẽ nhận được thông báo về trận đấu này.</value>
+  </data>
+  <data name="Question3ShortAnswer" xml:space="preserve">
+    <value>rong danh sách trận đấu, nhấn vào hình "Ngôi sao"...</value>
+  </data>
+  <data name="MultipleLanguagesAndTimeZones" xml:space="preserve">
+    <value>ĐA NGÔN NGỮ VÀ MÚI GIỜ</value>
+  </data>
+  <data name="MultipleLanguagesAndTimeZonesDetail" xml:space="preserve">
+    <value>Hỗ trợ 6 ngôn ngữ được sử dụng rộng rãi tại Châu Á, đi kèm với công cụ lựa chọn múi giờ tiện lợi. Giờ đây, bạn có thể lựa chọn ngôn ngữ hiển thị và múi giờ phù hợp.</value>
+  </data>
+  <data name="NoAds" xml:space="preserve">
+    <value>Không quảng cáo</value>
+  </data>
+  <data name="NoAdsDetail" xml:space="preserve">
+    <value>Thoải mái trải nghiệm các dịch vụ của chúng tôi mà không bị các quảng cáo làm phiền.</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Dieu khoan</value>
+  </data>
+  <data name="RealTimeUpdates" xml:space="preserve">
+    <value>Cập nhật theo thời gian thực</value>
+  </data>
+  <data name="RealTimeUpdatesDetail" xml:space="preserve">
+    <value>Liên tục cập nhật thông tin của trận đấu như đội hình xuất phát, tỷ số, tỷ lệ giữ bóng, v.v... Mọi thông tin nổi bật của trận đấu đều sẽ được truyền tải đến bạn thông qua dịch vụ bình luận trực tiếp bằng chữ.</value>
+  </data>
+  <data name="Social" xml:space="preserve">
+    <value>Mạng xã hội</value>
+  </data>
+  <data name="SocialDetail" xml:space="preserve">
+    <value>Bạn có điều muốn chia sẻ về trận đấu tối qua? Đừng ngại ngùng, hãy kết nối với những người dùng khác thông qua cộng đồng của chúng tôi - cùng lắng nghe và chia sẻ suy nghĩ của mình.</value>
+  </data>
+  <data name="TVChannels" xml:space="preserve">
+    <value>Lịch phát sóng</value>
+  </data>
+  <data name="TVChannelsDetail" xml:space="preserve">
+    <value>Bạn muốn xem trận đấu trên TV? Sử dụng tính năng này để biết được kênh và giờ phát sóng tại địa phương.</value>
+  </data>
+  <data name="TypeKeywordToFindAnswer" xml:space="preserve">
+    <value>nhập từ khoá để tìm câu trả lời</value>
+  </data>
+  <data name="Question4" xml:space="preserve">
+    <value>Làm sao để xem bảng xếp hạng của một giải đấu?</value>
+  </data>
+  <data name="Question4Answer" xml:space="preserve">
+    <value>Nhấn vào tên giải đấu để xem lịch thi đấu, kết quả và bảng xếp hạng (nếu có). Ví dụ: để xem Bảng xếp hạng của Giải Ngoại hạng Anh, nhấn vào tiêu đề "Ngoại hạng Anh" (phía trên trận đấu đầu tiên của giải).</value>
+  </data>
+  <data name="Question4ShortAnswer" xml:space="preserve">
+    <value>Nhấn vào tên giải đấu để xem lịch thi đấu...</value>
+  </data>
+  <data name="Question1" xml:space="preserve">
+    <value>Tại sao tôi nên thêm Trận đấu/Giải đấu vào mục yêu thích?</value>
+  </data>
+  <data name="Question1Answer" xml:space="preserve">
+    <value>Nếu có mối quan tâm đặc biệt đến một Trận đấu/Giải đấu nào đó, chúng tôi khuyến khích bạn sử dụng tính năng Yêu thích. Khi đó, trận đấu/giải đấu yêu thích của bạn sẽ luôn được hiển thị ở đầu trang, giúp việc theo dõi trở nên cực kỳ dễ dàng, thuận tiện và nhanh chóng, do bạn không cần phải tốn thời gian tìm kiếm.</value>
+  </data>
+  <data name="Question1ShortAnswer" xml:space="preserve">
+    <value>Nếu có mối quan tâm đặc biệt đến một Trận đấu/Giải đấu nào đó...</value>
+  </data>
+  <data name="Question6" xml:space="preserve">
+    <value>Tôi đã đăng ký nhận thông báo của một trận đấu và ngôi sao bên cạnh trận đấu cũng đã chuyển sang màu cam, nhưng tôi không nhận được bất kỳ thông báo nào. Tôi nên làm gì?</value>
+  </data>
+  <data name="Question6Answer" xml:space="preserve">
+    <value>Hãy đảm bảo rằng bạn đã bật chức năng nhận thông báo cho ứng dụng Score247 trên Cài đặt hệ thống của điện thoại, sau đó mở lại ứng dụng, hủy nhận thông tin trận đấu và đăng ký lại. Nếu vẫn không có tác dụng, vui lòng liên hệ với bộ phận hỗ trợ của chúng tôi.</value>
+  </data>
+  <data name="Question6ShortAnswer" xml:space="preserve">
+    <value>Hãy đảm bảo rằng bạn đã bật chức năng nhận thông báo cho...</value>
+  </data>
+  <data name="Question7" xml:space="preserve">
+    <value>Đội hình ra sân không chính xác. Tại sao vậy?</value>
+  </data>
+  <data name="Question7Answer" xml:space="preserve">
+    <value>Đội hình ra sân được thay đổi thường xuyên và chúng tôi cố gắng cập nhật liên tục. Dữ liệu chính xác nhất thường là vào khoảng 1 giờ (hoặc ít hơn) trước khi trận đấu bắt đầu. Chúng tôi cũng hiển thị thời gian của lần cập nhật mới nhất và cho biết thông tin cập nhật này đã được xác nhận hay chưa. Tuy nhiên, thông tin này chỉ dành cho một số giải đấu nhất định.</value>
+  </data>
+  <data name="Question7ShortAnswer" xml:space="preserve">
+    <value>Đội hình ra sân được thay đổi thường xuyên và...</value>
+  </data>
+  <data name="Question8" xml:space="preserve">
+    <value>Tại sao tôi không thấy giải đấu yêu thích của mình trong danh sách các trận đấu?</value>
+  </data>
+  <data name="Question8Answer" xml:space="preserve">
+    <value>Giải đấu yêu thích chỉ hiển thị trong ngày có trận đấu diễn ra. Ví dụ: Ngoại hạng Anh (EPL) là giải đấu yêu thích và sẽ có một số trận đấu diễn ra vào Thứ Bảy ngày 25 tháng 1, còn hôm nay là Thứ Hai ngày 20 tháng 1, do vậy giải đấu yêu thích đó sẽ chỉ được hiển thị ở danh sách các trận đấu ngày Thứ Bảy 25 tháng 1 - không phải ngày Hôm nay (20 tháng 1)</value>
+  </data>
+  <data name="Question8ShortAnswer" xml:space="preserve">
+    <value>Giải đấu yêu thích chỉ hiển thị trong ngày có trận đấu diễn ra...</value>
+  </data>
+  <data name="Question9" xml:space="preserve">
+    <value>Phát hiện lỗi dữ liệu. Tôi nên làm gì?</value>
+  </data>
+  <data name="Question9Answer" xml:space="preserve">
+    <value>Để báo lỗi, vui lòng liên hệ với chúng tôi tại http://www.score247.com/contact/. Cảm ơn.</value>
+  </data>
+  <data name="Question9ShortAnswer" xml:space="preserve">
+    <value>Để báo lỗi, vui lòng liên hệ...</value>
+  </data>
+  <data name="Question10" xml:space="preserve">
+    <value>Thời gian bắt đầu của trận đấu hiển thị không chính xác. Tại sao vậy?</value>
+  </data>
+  <data name="Question10Answer" xml:space="preserve">
+    <value>Thời gian bắt đầu trận đấu sẽ dựa trên múi giờ được cài đặt trên thiết bị của bạn. Do đó, để có được thời gian chuẩn xác, bạn cần lựa chọn múi giờ trên thiết bị của mình sao cho phù hợp. Xin lưu ý rằng bạn cần thay đổi múi giờ, chứ không phải thời gian hiển thị.</value>
+  </data>
+  <data name="Question10ShortAnswer" xml:space="preserve">
+    <value>Thời gian bắt đầu trận đấu sẽ dựa trên...</value>
+  </data>
+  <data name="Question11" xml:space="preserve">
+    <value>Tại sao một số giải đấu không có trong hệ thống?</value>
+  </data>
+  <data name="Question11Answer" xml:space="preserve">
+    <value>Chúng tôi đang tiến hành việc mở rộng danh sách các giải đấu. Hãy gửi yêu cầu về giải đấu mà bạn quan tâm qua Facebook và chúng tôi sẽ xem xét nó!</value>
+  </data>
+  <data name="Question11ShortAnswer" xml:space="preserve">
+    <value>Chúng tôi đang tiến hành việc mở rộng danh sách ...</value>
+  </data>
+  <data name="Question12" xml:space="preserve">
+    <value>Làm cách nào để tắt thông báo Tin tức?</value>
+  </data>
+  <data name="Question12Answer" xml:space="preserve">
+    <value>Đến mục [Cài đặt] &gt; [Thông báo] để bật/tắt chức năng thông báo Tin tức.</value>
+  </data>
+  <data name="Question12ShortAnswer" xml:space="preserve">
+    <value>Đến mục [Cài đặt] &gt; [Thông báo] để...</value>
+  </data>
+  <data name="Question13" xml:space="preserve">
+    <value>Làm cách nào để tắt thông báo tin tức cho Trận đấu/Giải đấu yêu thích?</value>
+  </data>
+  <data name="Question13Answer" xml:space="preserve">
+    <value>Đến mục [Cài đặt] &gt; [Thông báo thông tin]. Tại đây, bạn có thể quản lý việc nhận/không muốn nhận tất cả các thông báo. </value>
+  </data>
+  <data name="Question13ShortAnswer" xml:space="preserve">
+    <value>Đến mục [Cài đặt] &gt; [Thông báo thông tin] để...</value>
+  </data>
+  <data name="Question14" xml:space="preserve">
+    <value>Tại sao không thấy được hình ảnh?</value>
+  </data>
+  <data name="Question14Answer" xml:space="preserve">
+    <value>&lt;ul class="anwser-full"&gt;
+                    &lt;li&gt;Đảm bảo bạn đã kết nối mạng thành công.&lt;/li&gt;
+                    &lt;li&gt;Xóa bộ nhớ cache: [Cài đặt] &gt; [Xóa bộ nhớ cache].&lt;/li&gt;
+                    &lt;li&gt;Khởi động lại thiết bị&lt;/li&gt;
+                    &lt;li&gt;Nếu sự cố này vẫn còn, vui lòng chụp màn hình của trang bị lỗi và gửi đến mục [Phản hồi] cùng với mô tả, nhân viên của chúng tôi sẽ liên lạc với bạn sớm nhất có thể.&lt;/li&gt;
+                &lt;/ul&gt;</value>
+  </data>
+  <data name="Question14ShortAnswer" xml:space="preserve">
+    <value>Go to [Settings] &gt; [Info Alert]. Here, you c...</value>
+  </data>
+  <data name="CopyrightText" xml:space="preserve">
+    <value>© 2019 Score247. Mọi quyền được bảo lưu</value>
+  </data>
+  <data name="GetInTouchWithUs" xml:space="preserve">
+    <value>Giữ liên lạc với chúng tôi</value>
+  </data>
+  <data name="GetInTouchWithUsDetail" xml:space="preserve">
+    <value>Dù là bạn đang quan tâm đến cơ hội việc làm hay muốn trở thành đối tác, hoặc đơn giản chỉ là muốn đóng góp ý kiến - Đừng ngần ngại, hãy liên hệ với chúng tôi qua mẫu dưới đây. Chúng tôi mong nhận được tin từ bạn!</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="Question15" xml:space="preserve">
+    <value>Có câu hỏi chưa được liệt kê trong mục FAQs?</value>
+  </data>
+  <data name="Question15Answer" xml:space="preserve">
+    <value>Bạn có thể gửi email cho chúng tôi bằng cách nhấn vào liên kết sau: &lt;a href="mailto:support@score247.com" target="_top"&gt;support@score247.com&lt;/a&gt;</value>
+  </data>
+  <data name="Question15ShortAnswer" xml:space="preserve">
+    <value>Bạn có thể gửi email cho chúng tôi bằng cách..</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>Gửi</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="YourEmailAddress" xml:space="preserve">
+    <value>Địa chỉ email của bạn</value>
+  </data>
+</root>

@@ -8,7 +8,15 @@
     <link rel="apple-touch-icon" href="~/images/logo192x192.png">
     <link rel="icon" href="~/favicon.ico" type="image/x-icon" />
     <title>Score247</title>
-    <link rel="stylesheet" href="~/bundles/site.min.css" />
+    <environment include="Development">
+        <link href="~/fonts/style.css" rel="stylesheet" />
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/lib/OwlCarousel/owl.carousel.min.css" rel="stylesheet" />
+        <link href="~/scss/site.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/bundles/site.min.css" asp-append-version="true" />
+    </environment>
 </head>
 <body>
     @RenderBody()
