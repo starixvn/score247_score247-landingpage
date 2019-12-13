@@ -528,23 +528,7 @@ a, a:hover {
 .list-qa {
   list-style: none;
   margin: 0;
-  padding: 0;
-  /*.answer {
-        line-height: 1.5;
-        color: rgba(255, 255, 255, 0.64);
-        transition: height 0.1s ease-in 0.1s;
-    }
-
-    .answer-short {
-        @extend .answer;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        height: 21px;
-        transition: height 0.1s ease-out 0.1s;
-    }*/
-  /* styles for '...' */ }
+  padding: 0; }
   .list-qa .qa {
     position: relative;
     background-color: #1E222D;
@@ -570,26 +554,16 @@ a, a:hover {
     line-height: 1.5;
     color: #FF9900; }
   .list-qa .answer {
+    color: rgba(255, 255, 255, 0.64);
     line-height: 1.5;
-    padding-right: 0.875rem;
-    margin-right: -1rem; }
+    max-height: 300px;
+    transition: max-height 0.2s ease-in; }
   .list-qa .answer-short {
-    position: relative;
     max-height: 21px;
-    overflow: hidden; }
-    .list-qa .answer-short:before {
-      content: '...';
-      position: absolute;
-      right: 0;
-      bottom: 0; }
-    .list-qa .answer-short::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      width: 1em;
-      height: 1em;
-      margin-top: 0.2em;
-      background: #1E222D; }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-height 0.2s ease-out;
+    white-space: nowrap; }
 
 .contact-intro {
   padding-top: 44px;
