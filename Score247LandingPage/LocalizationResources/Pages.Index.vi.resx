@@ -307,12 +307,10 @@
     <value>Tại sao không thấy được hình ảnh?</value>
   </data>
   <data name="Question14Answer" xml:space="preserve">
-    <value>&lt;ul class="anwser-full"&gt;
-                    &lt;li&gt;Đảm bảo bạn đã kết nối mạng thành công.&lt;/li&gt;
+    <value>                    &lt;li&gt;Đảm bảo bạn đã kết nối mạng thành công.&lt;/li&gt;
                     &lt;li&gt;Xóa bộ nhớ cache: [Cài đặt] &gt; [Xóa bộ nhớ cache].&lt;/li&gt;
                     &lt;li&gt;Khởi động lại thiết bị&lt;/li&gt;
-                    &lt;li&gt;Nếu sự cố này vẫn còn, vui lòng chụp màn hình của trang bị lỗi và gửi đến mục [Phản hồi] cùng với mô tả, nhân viên của chúng tôi sẽ liên lạc với bạn sớm nhất có thể.&lt;/li&gt;
-                &lt;/ul&gt;</value>
+                    &lt;li&gt;Nếu sự cố này vẫn còn, vui lòng chụp màn hình của trang bị lỗi và gửi đến mục [Phản hồi] cùng với mô tả, nhân viên của chúng tôi sẽ liên lạc với bạn sớm nhất có thể.&lt;/li&gt;</value>
   </data>
   <data name="Question14ShortAnswer" xml:space="preserve">
     <value>Đảm bảo bạn đã kết nối mạng thành công...</value>

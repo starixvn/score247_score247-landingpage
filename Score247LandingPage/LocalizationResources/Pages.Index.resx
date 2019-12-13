@@ -307,12 +307,12 @@
     <value>Why images aren’t loading?</value>
   </data>
   <data name="Question14Answer" xml:space="preserve">
-    <value>&lt;ul class="anwser-full"&gt;
+    <value>
                     &lt;li&gt;Check your network connection, make sure it is ON.&lt;/li&gt;
                     &lt;li&gt;Clear the client cache: [Settings] &gt; [Clear Cache].&lt;/li&gt;
                     &lt;li&gt;Restart the device&lt;/li&gt;
                     &lt;li&gt;If this problem still persists, please capture the screenshot of that page and send it to the [Feedback] along with the description, our staff will get to you as soon as possible.&lt;/li&gt;
-                &lt;/ul&gt;</value>
+</value>
   </data>
   <data name="Question14ShortAnswer" xml:space="preserve">
     <value>Go to [Settings] &gt; [Info Alert]. Here, you c...</value>
