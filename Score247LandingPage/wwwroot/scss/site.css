@@ -557,7 +557,7 @@ a, a:hover {
     .list-qa .qa:after {
       position: absolute;
       top: 50%;
-      right: 16px;
+      right: 14px;
       font-size: 6px;
       margin-top: -4px;
       font-family: "Score247LandingPage";
@@ -570,29 +570,26 @@ a, a:hover {
     line-height: 1.5;
     color: #FF9900; }
   .list-qa .answer {
-    position: relative;
-    line-height: 21px;
-    margin-right: -1em;
-    padding-right: 1em; }
+    line-height: 1.5;
+    padding-right: 0.875rem;
+    margin-right: -1rem; }
   .list-qa .answer-short {
-    overflow: hidden;
     position: relative;
-    line-height: 21px;
     max-height: 21px;
-    transition: overflow 0.1s ease-in 0.1s; }
-  .list-qa .answer:before {
-    content: '...';
-    position: absolute;
-    right: 0;
-    bottom: 0; }
-  .list-qa .answer:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 1em;
-    height: 1em;
-    margin-top: 0.2em;
-    background: #1E222D; }
+    overflow: hidden; }
+    .list-qa .answer-short:before {
+      content: '...';
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+    .list-qa .answer-short::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 1em;
+      height: 1em;
+      margin-top: 0.2em;
+      background: #1E222D; }
 
 .contact-intro {
   padding-top: 44px;
