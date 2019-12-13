@@ -9,14 +9,11 @@
 
     public class RouteSegmentCultureProvider : IRequestCultureProvider
     {
-        private readonly string defaultCulture;
+        private readonly IList<CultureInfo> supportedCultures;
 
-        private readonly IList<CultureInfo> SupportedCultures;
-
-        public RouteSegmentCultureProvider(IList<CultureInfo> supportedCultures, string defaultCulture)
+        public RouteSegmentCultureProvider(IList<CultureInfo> supportedCultures)
         {
-            this.defaultCulture = defaultCulture;
-            SupportedCultures = supportedCultures;
+            this.supportedCultures = supportedCultures;
         }
 
         public Task<ProviderCultureResult> DetermineProviderCultureResult(HttpContext httpContext)
@@ -27,7 +24,7 @@
                 return Task.FromResult<ProviderCultureResult>(null);
             }
 
-            if (!SupportedCultures.Any(x =>
+            if (!supportedCultures.Any(x =>
                  x.TwoLetterISOLanguageName.ToLower() == routeValues[1].ToLower() ||
                  x.Name.ToLower() == routeValues[1].ToLower()))
             {

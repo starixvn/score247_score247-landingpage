@@ -2,6 +2,7 @@ namespace Score247LandingPage
 {
     using System;
     using System.Globalization;
+    using System.Linq;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
@@ -10,6 +11,7 @@ namespace Score247LandingPage
     using Microsoft.AspNetCore.Mvc.Razor;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Configuration.Binder;
     using Score247LandingPage.LocalizationRouting;
     using WebEssentials.AspNetCore.Pwa;
 
@@ -31,23 +33,16 @@ namespace Score247LandingPage
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            var cultures = new[]
-            {
-                new CultureInfo("en"),
-                new CultureInfo("vi")
-            };
 
-            //services.AddRobotify(c => c
-            //    .AddDisallowAllRobotGroupProvider()
-            //    .AddRobotGroupsFromAppSettings()
-            //);
+            var cultures = Configuration.GetSection("SupportCultures").Get<string[]>()
+                .Select(x => new CultureInfo(x)).ToList();
 
             services.Configure<RequestLocalizationOptions>(opts =>
             {
                 opts.DefaultRequestCulture = new RequestCulture("en");
                 opts.SupportedCultures = cultures;
                 opts.SupportedUICultures = cultures;
-                opts.RequestCultureProviders.Insert(0, new RouteSegmentCultureProvider(cultures, "en"));
+                opts.RequestCultureProviders.Insert(0, new RouteSegmentCultureProvider(cultures));
             });
 
             services.AddLocalization(opts =>
