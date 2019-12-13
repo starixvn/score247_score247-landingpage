@@ -655,15 +655,52 @@ a, a:hover {
         line-height: 1.5;
         color: #FF9900;
     }
-
-    .anwser {
+    /*.answer {
         line-height: 1.5;
         color: rgba(255, 255, 255, 0.64);
+        transition: height 0.1s ease-in 0.1s;
     }
 
-    .anwser-full {
-        @extend .anwser;
-        display: none;
+    .answer-short {
+        @extend .answer;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        height: 21px;
+        transition: height 0.1s ease-out 0.1s;
+    }*/
+    /* styles for '...' */
+    .answer {
+        position: relative;
+        line-height: 21px;
+        margin-right: -1em;
+        padding-right: 1em;
+    }
+
+    .answer-short {
+        overflow: hidden;
+        position: relative;
+        line-height: 21px;
+        max-height: 21px;
+        transition: overflow 0.1s ease-in 0.1s;
+    }
+
+    .answer:before {
+        content: '...';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .answer:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+        background: #1E222D;
     }
 }
 

@@ -57,17 +57,9 @@ $(function () {
         loop: true
     });
 
-    $('.qa').each(function () {
-        var tis = $(this),
-            state = false,
-            answer = tis.children('.anwser').slideDown(),
-            fullAnswer = tis.children('.anwser-full').slideUp();
-        tis.click(function () {
-            state = !state;
-            answer.slideToggle(state);
-            fullAnswer.slideToggle(!state);
-            tis.toggleClass('active', state);
-        });
+    $('.qa').on('click',null,function () {
+        var $element = $(this);
+        $element.children('.answer').toggleClass('answer-short');
     });
 
     

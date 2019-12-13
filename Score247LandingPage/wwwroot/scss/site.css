@@ -528,7 +528,23 @@ a, a:hover {
 .list-qa {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  /*.answer {
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.64);
+        transition: height 0.1s ease-in 0.1s;
+    }
+
+    .answer-short {
+        @extend .answer;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        height: 21px;
+        transition: height 0.1s ease-out 0.1s;
+    }*/
+  /* styles for '...' */ }
   .list-qa .qa {
     position: relative;
     background-color: #1E222D;
@@ -553,11 +569,30 @@ a, a:hover {
     font-weight: 700;
     line-height: 1.5;
     color: #FF9900; }
-  .list-qa .anwser, .list-qa .anwser-full {
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.64); }
-  .list-qa .anwser-full {
-    display: none; }
+  .list-qa .answer {
+    position: relative;
+    line-height: 21px;
+    margin-right: -1em;
+    padding-right: 1em; }
+  .list-qa .answer-short {
+    overflow: hidden;
+    position: relative;
+    line-height: 21px;
+    max-height: 21px;
+    transition: overflow 0.1s ease-in 0.1s; }
+  .list-qa .answer:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .list-qa .answer:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: #1E222D; }
 
 .contact-intro {
   padding-top: 44px;
