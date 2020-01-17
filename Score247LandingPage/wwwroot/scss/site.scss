@@ -465,6 +465,26 @@ a, a:hover {
     }
 }
 
+.store-container
+{
+    display:flex;
+    align-items:flex-start;
+}
+
+.qrcode-container {
+    display: none;
+
+    @media(min-width: 1024px) {
+        display: inline-block;
+        padding-left: 40px;
+
+        img {
+            width: 156px;
+            height: 156px;
+            border-radius: 5px;
+        }
+    }
+}
 // features
 .feature-title {
     display: none;

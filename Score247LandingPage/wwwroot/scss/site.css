@@ -412,6 +412,21 @@ a, a:hover {
     .banner-container .banner-left {
       width: 480px; } }
 
+.store-container {
+  display: flex;
+  align-items: flex-start; }
+
+.qrcode-container {
+  display: none; }
+  @media (min-width: 1024px) {
+    .qrcode-container {
+      display: inline-block;
+      padding-left: 40px; }
+      .qrcode-container img {
+        width: 156px;
+        height: 156px;
+        border-radius: 5px; } }
+
 .feature-title {
   display: none; }
 
