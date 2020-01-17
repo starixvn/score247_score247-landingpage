@@ -73,7 +73,16 @@ namespace Score247LandingPage
                 app.UseExceptionHandler("/Error");
             }
 
-            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                OnPrepareResponse = ctx =>
+                {
+                    // Cache static files for 30 days
+                    ctx.Context.Response.Headers.Append("Cache-Control", "public,max-age=25920000");
+                    ctx.Context.Response.Headers.Append("Expires", DateTime.UtcNow.AddDays(300).ToString("R", CultureInfo.InvariantCulture));
+                }
+            });
+
             app.UseCookiePolicy();
 
             app.UseRobotsTxt(builder =>
