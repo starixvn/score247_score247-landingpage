@@ -11,7 +11,12 @@
 <section class="header-area">
     <div class="navbar-area">
         <div class="page-container nav-container">
-            <a class="logo"><img src="~/images/Logo.png" alt="Logo" /></a>
+            <a class="logo">
+                <picture>
+                    <source srcset="~/images/Logo.webp" type="image/webp" alt="Logo">
+                    <img src="~/images/Logo.png" alt="Logo" />
+                </picture>
+            </a>
             <nav class="navbar navbar-expand-lg">
                 <button class="navbar-toggler" id="hambugerBox">
                     <div class="hambuger" id="hambugerIcon">
@@ -54,10 +59,30 @@
                 <div class="device-holder">
                     <div class="device-holder-inner">
                         <div id="banner-carousel" class="owl-carousel owl-theme">
-                            <div class="item"><img src="~/images/banner/scores.png" alt="Scores Page" /></div>
-                            <div class="item"><img src="~/images/banner/info.png" alt="Info" /></div>
-                            <div class="item"><img src="~/images/banner/tracker.png" alt="Tracker" /></div>
-                            <div class="item"><img src="~/images/banner/statistic.png" alt="Statistic" /></div>
+                            <div class="item">
+                                <picture>
+                                    <source srcset="~/images/banner/scores.webp" type="image/webp" alt="Scores Page">
+                                    <img src="~/images/banner/scores.png" alt="Scores Page" />
+                                </picture>
+                            </div>
+                            <div class="item">
+                                <picture>
+                                    <source srcset="~/images/banner/info.webp" type="image/webp" alt="Info">
+                                    <img src="~/images/banner/info.png" alt="Scores Page" />
+                                </picture>
+                            </div>
+                            <div class="item">
+                                <picture>
+                                    <source srcset="~/images/banner/tracker.webp" type="image/webp" alt="Tracker">
+                                    <img src="~/images/banner/tracker.png" alt="Tracker" />
+                                </picture>
+                            </div>
+                            <div class="item">
+                                <picture>
+                                    <source srcset="~/images/banner/statistic.webp" type="image/webp" alt="Statistic">
+                                    <img src="~/images/banner/statistic.png" alt="Statistic" />
+                                </picture>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,7 +94,10 @@
     <h1 class="page-title feature-title">@Localizer["Features"]</h1>
     <div class="page-container features-container">
         <div class="features-image">
-            <img src="~/images/linesup.png" alt="Features 1" />
+            <picture>
+                <source srcset="~/images/linesup.webp" type="image/webp" alt="Features 1">
+                <img src="~/images/linesup.png" alt="Features 1" />
+            </picture>
         </div>
         <div class="features-list">
             <div class="block">
@@ -147,7 +175,10 @@
             </div>
         </div>
         <div class="features-image">
-            <img src="~/images/h2h.png" alt="Features 2" />
+            <picture>
+                <source srcset="~/images/h2h.webp" type="image/webp" alt="Features 2">
+                <img src="~/images/h2h.png" alt="Features 2" />
+            </picture>
         </div>
     </div>
 </div>
