@@ -17,5 +17,11 @@
       "wwwroot/lib/OwlCarousel/owl.carousel.min.css",
       "wwwroot/scss/site.css"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/bundles/lmt.min.css",
+    "inputFiles": [
+      "wwwroot/scss/lmt.css"
+    ]
   }
 ]

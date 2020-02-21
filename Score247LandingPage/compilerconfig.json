@@ -2,5 +2,9 @@
   {
     "outputFile": "wwwroot/scss/site.css",
     "inputFile": "wwwroot/scss/site.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/lmt.css",
+    "inputFile": "wwwroot/scss/lmt.scss"
   }
 ]
